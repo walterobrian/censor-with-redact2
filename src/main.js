@@ -16,7 +16,7 @@ export default async ({ req, res }) => {
     return res.json({ ok: false, error: err.message }, 400);
   }
 
-  const response = await fetch(`https://redact.aws.eu.pangea.cloud/v1/redact`, {
+  const response = await fetch(`https://redact.aws.us.pangea.cloud/v1/redact`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
